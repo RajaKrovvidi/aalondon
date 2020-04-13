@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "AA London meeting directory",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "static/images/aa192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "AA London",
+  "short_name": "AA London",
+  "start_url": "/"
+}

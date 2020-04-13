@@ -1,13 +1,13 @@
+{% load pwa %}
 {% load static wagtailuserbar %}
 {% load wagtailcore_tags %}
 {% load render_bundle from webpack_loader %}
 {% load menu_tags %}
 
-
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
+        {% progressive_web_app_meta %}
         <meta charset="utf-8" />
         <title>
             {% block title %}
@@ -30,13 +30,15 @@
         
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
 
-        
 
          <link rel="stylesheet" href="{% static 'css/main.css' %}" />
        
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
+
+        <!-- Add to Phone Homepage link -->
+		<link rel="manifest" href="{% static 'manifest.webmanifest' %}">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
     

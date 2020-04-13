@@ -27,6 +27,9 @@ urlpatterns = [
     path('onlinemeetings/<slug:slug>/', OnlineMeetingDetailView.as_view(), name='online-meeting-detail'),
     
     path('online/zoom-meetings/', redirect_view),
+
+    # Progressive Web Application
+    path('', include('pwa.urls')),
     
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in

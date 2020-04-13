@@ -19,6 +19,7 @@ import environ,os
 env = environ.Env()
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
 
 
 # Quick-start development settings - unsuitable for production
@@ -66,6 +67,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'wagtail.contrib.modeladmin',
     'wagtailmenus',
+
+    'pwa',
 ]
 
 MIDDLEWARE = [
