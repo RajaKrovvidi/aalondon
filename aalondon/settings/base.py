@@ -116,8 +116,9 @@ DATABASES = {
     'default': env.db('DATABASE_URL', default='postgres:///aalondon'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
-
-
+DATABASES['default']['NAME'] = "mydatabase"
+DATABASES['default']['TEST'] = {}
+DATABASES['default']['TEST']['NAME'] = "mydatabase"
 
 
 # Password validation
