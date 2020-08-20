@@ -1,0 +1,21 @@
+[
+{
+    "model": "event.RecurringEventParent",
+    "pk": 1,
+    "fields": {
+        "title" : "London North InterGroup",
+        "slug":"parent",
+        "post_date":"2020-08-09", 
+        "recurring_start_date": "2020-08-15",
+        "recurring_end_date":"2020-10-15",
+        "start_time" : "07:00:00",
+        "end_time":"08:30:00",
+        "recurring_index" : 0,
+        "recurring_month" : 0,
+        "address": "Flat 5, 196",
+        "postcode": "EC2V 6HH", 
+        "type": 1
+    }   
+}
+
+]
